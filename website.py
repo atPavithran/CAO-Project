@@ -12,7 +12,7 @@ menu = {
 
 cart = {}
 
-st.markdown("<h1 style='text-align: center;'>Shopping Cart</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>SHOPPING CART</h1>", unsafe_allow_html=True)
 st.markdown(f"<h2 style='text-align: center;'>MENU</h2>", unsafe_allow_html=True)
 
 col1, col2 = st.columns(2)
@@ -24,13 +24,13 @@ for item_name, details in menu.items():
     if i < len(menu.items())/2 :  
         i += 1
         with col1:
-            st.markdown(f"<h3 style='text-align: left;'>{item_name}</h3>", unsafe_allow_html=True)
+            st.markdown(f"<h3 style='text-align: left; color: blue'>{item_name}</h3>", unsafe_allow_html=True)
             st.write("Price:", details['price'])
             image = Image.open(details['image'])
             st.image(image, width=200)
     else:
         with col2:
-            st.markdown(f"<h3 style='text-align: left;'>{item_name}</h3>", unsafe_allow_html=True)
+            st.markdown(f"<h3 style='text-align: left; color: blue'>{item_name}</h3>", unsafe_allow_html=True)
             st.write("Price:", details['price'])
             image = Image.open(details['image'])
             st.image(image, width=200)
