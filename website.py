@@ -2,17 +2,7 @@ import streamlit as st
 import pandas as pd
 from src import Operations as op
 from PIL import Image
-st.markdown(
-    """
-    <style>
-    body {
-        background-image: url('https://images.app.goo.gl/DQqJjU6DHMnCAtZr5');
-        background-size: cover; 
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+
 menu = {
     "Munch": {"price": 5, "image": r"src/item1.jpg"},
     "Ball-Point Pen": {"price": 7, "image": r"src/item2.jpg"},
@@ -23,8 +13,8 @@ menu = {
 
 cart = {}
 
-st.markdown("<h1 style='text-align: center;'>SHOPPING CART</h1>", unsafe_allow_html=True)
-st.markdown(f"<h2 style='text-align: center;'>MENU</h2>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: #F5F5DC'>SHOPPING CART</h1>", unsafe_allow_html=True)
+st.markdown(f"<h2 style='text-align: center; color: #F5F5DC'>MENU</h2>", unsafe_allow_html=True)
 
 col1, col2 = st.columns(2)
 column = [col1, col2]
