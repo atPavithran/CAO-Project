@@ -24,13 +24,13 @@ for item_name, details in menu.items():
     if i < len(menu.items())/2 :  
         i += 1
         with col1:
-            st.markdown(f"<h3 style='text-align: left; color: #F5F5DC'>{item_name}</h3>", unsafe_allow_html=True)
+            st.markdown(f"<h3 style='text-align: left; color: yellow'>{item_name}</h3>", unsafe_allow_html=True)
             st.write("Price:", details['price'])
             image = Image.open(details['image'])
             st.image(image, width=200)
     else:
         with col2:
-            st.markdown(f"<h3 style='text-align: left; color: #F5F5DC'>{item_name}</h3>", unsafe_allow_html=True)
+            st.markdown(f"<h3 style='text-align: left; color: yellow'>{item_name}</h3>", unsafe_allow_html=True)
             st.write("Price:", details['price'])
             image = Image.open(details['image'])
             st.image(image, width=200)
