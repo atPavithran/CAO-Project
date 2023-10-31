@@ -2,6 +2,17 @@ import streamlit as st
 import pandas as pd
 from src import Operations as op
 from PIL import Image
+st.markdown(
+    """
+    <style>
+    body {
+        background-image: url('https://images.app.goo.gl/DQqJjU6DHMnCAtZr5');
+        background-size: cover; 
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 menu = {
     "Munch": {"price": 5, "image": r"src/item1.jpg"},
     "Ball-Point Pen": {"price": 7, "image": r"src/item2.jpg"},
