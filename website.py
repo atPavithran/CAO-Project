@@ -37,7 +37,7 @@ for item_name, details in menu.items():
             st.image(image, width=200)
 
 
-st.header("Your Cart")
+st.markdown(f"<h3 style='text-align: left; '>Your Cart</h3>", unsafe_allow_html=True)
 cart_items = []
 for item in menu.keys():
     quantity = st.slider(f"Select quantity of {item}", 0, 10, 0)
