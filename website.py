@@ -13,8 +13,8 @@ menu = {
 
 cart = {}
 
-st.markdown("<h1 style='text-align: center; color: #F5F5DC'>SHOPPING CART</h1>", unsafe_allow_html=True)
-st.markdown(f"<h2 style='text-align: center; color: #F5F5DC'>MENU</h2>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: #F5F5DC'>🛒SHOPPING CART🛒</h1>", unsafe_allow_html=True)
+st.markdown(f"<h2 style='text-align: center; color: #F5F5DC'>☰MENU☰</h2>", unsafe_allow_html=True)
 
 col1, col2 = st.columns(2)
 column = [col1, col2]
@@ -51,9 +51,9 @@ else:
     df = pd.DataFrame(cart_items, columns=["Item Name", "Quantity", "Price per Item"])
     st.table(df)
 
-st.markdown(f"<h2 style='text-align: left;'>ENTER DISCOUNT FROM SCRATCH CARD!!!</h2>", unsafe_allow_html=True)
+st.markdown(f"<h2 style='text-align: left; color: #F5F5DC'>ENTER DISCOUNT FROM SCRATCH CARD!!!</h2>", unsafe_allow_html=True)
 discount = st.number_input("DISCOUNT", min_value=0, max_value=100, step=1)
-st.markdown(f"<h2 style='text-align: left;'>ENTER CASHBACK AMOUNT!!!</h2>", unsafe_allow_html=True)
+st.markdown(f"<h2 style='text-align: left; color: #F5F5DC'>ENTER CASHBACK AMOUNT!!!</h2>", unsafe_allow_html=True)
 cashback = st.number_input("CASHBACK", min_value=0, max_value=100, step=1)
 
 if st.button("Calculate"):
