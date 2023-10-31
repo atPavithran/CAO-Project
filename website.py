@@ -52,9 +52,9 @@ else:
     st.table(df)
 
 st.markdown(f"<h2 style='text-align: left; color: #F5F5DC'>ENTER DISCOUNT FROM SCRATCH CARD!!!</h2>", unsafe_allow_html=True)
-discount = st.number_input("DISCOUNT", min_value=0, max_value=100, step=1)
+discount = st.number_input("DISCOUNT in %", min_value=0, max_value=100, step=1)
 st.markdown(f"<h2 style='text-align: left; color: #F5F5DC'>ENTER CASHBACK AMOUNT!!!</h2>", unsafe_allow_html=True)
-cashback = st.number_input("CASHBACK", min_value=0, max_value=100, step=1)
+cashback = st.number_input("CASHBACK in $", min_value=0, max_value=100, step=1)
 
 if st.button("Calculate"):
     final_cart = []
