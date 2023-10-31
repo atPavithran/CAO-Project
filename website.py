@@ -3,11 +3,11 @@ import pandas as pd
 from src import Operations as op
 from PIL import Image
 menu = {
-    "Munch": {"price": 5, "image": r"src\item1.jpg"},
-    "Ball-Point Pen": {"price": 7, "image": r"src\item2.jpg"},
-    "Lays": {"price": 10, "image": r"src\item3.jpg"},
-    "5Stars": {"price": 5, "image": r"src\item4.jpg"},
-    "Black Pen": {"price": 7, "image": r"src\item5.jpg"},
+    "Munch": {"price": 5, "image": r"src/item1.jpg"},
+    "Ball-Point Pen": {"price": 7, "image": r"src/item2.jpg"},
+    "Lays": {"price": 10, "image": r"src/item3.jpg"},
+    "5Stars": {"price": 5, "image": r"src/item4.jpg"},
+    "Black Pen": {"price": 7, "image": r"src/item5.jpg"},
 }
 
 cart = {}
