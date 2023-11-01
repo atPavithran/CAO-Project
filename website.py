@@ -26,7 +26,7 @@ for item_name, details in menu.items():
     if i < len(menu.items())/2 :  
         i += 1
         with col1:
-            st.markdown(f"<h3 style='text-align: left; color: pink'>{item_name}</h3>", unsafe_allow_html=True)
+            st.markdown(f"<h3 style='text-align: center; color: pink'>{item_name}</h3>", unsafe_allow_html=True)
             st.write("Price:", details['price'])
             image = Image.open(details['image'])
             st.image(image, width=200)
