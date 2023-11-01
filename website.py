@@ -84,9 +84,10 @@ if st.button("Calculate"):
     sum = op.binarysubtraction(sum,cashback)
 
     st.markdown(f"<h2 style='text-align: left; color: green'>YOU HAVE GOT A DISCOUNT OF {discount}%</h2>", unsafe_allow_html=True)
-    d = op.simplify_fraction(discount,100)
+    do = op.simplify_fraction(discount,100)
     st.markdown('<p style = "color: red; font-size: 10;">Restoring division is used to calculate the discount</p>', unsafe_allow_html=True)
-    temp , d = op.restoringdivision(sum,d[1])
+    temp , d = op.restoringdivision(sum,do[1])
+    d = op.boothmultiplication(d,do[0])
     st.write(f"Discount is ${d}")
 
     st.markdown('<p style = "color: red; font-size: 10;">Binary subtraction is used to calculate the FINAL total</p>', unsafe_allow_html=True)
