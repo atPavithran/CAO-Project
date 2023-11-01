@@ -35,7 +35,7 @@ for item_name, details in menu.items():
                 cart_items.append((item_name, quantity, menu[item_name]["price"]))
     else:
         with col2:
-            st.markdown(f"<h3 style='text-align: left; color: pink'>{item_name}</h3>", unsafe_allow_html=True)
+            st.markdown(f"<h3 style='text-align: center; color: pink'>{item_name}</h3>", unsafe_allow_html=True)
             st.write("Price:", details['price'])
             image = Image.open(details['image'])
             st.image(image, width=200)
