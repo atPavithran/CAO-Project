@@ -92,6 +92,16 @@ if st.button("Calculate"):
     st.markdown('<p style = "color: red; font-size: 10;">Binary subtraction is used to calculate the FINAL total</p>', unsafe_allow_html=True)
     sum = op.binarysubtraction(sum,d)
     st.markdown(f"<h2 style='text-align: left; color: green'>YOUR NET TOTAL IS:  ${sum}</h2>", unsafe_allow_html=True)
+    st.markdown(f"<h1 style='text-align: left; '>ALGORITHMS USED:</h2>", unsafe_allow_html=True)
+    st.subheader(f"Booth multiplication: ")
+    boothflow = Image.open("src/boothmultiplication.png")
+    st.image(boothflow)
+    st.write()
+    st.subheader(f"Restoring division: ")
+    restoringflow = Image.open("src/restoringdivision.png")
+    st.image(restoringflow)
+    st.write()
+    
 
 
 
