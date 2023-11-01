@@ -30,8 +30,10 @@ for item_name, details in menu.items():
             st.write("Price:", details['price'])
             image = Image.open(details['image'])
             st.write(
-                f"<div style="display: flex; justify-content: center;'><img src="{details['image']}' width="300" /></div>",
-                unsafe_allow_html=True)            
+    f"<div style='display: flex; justify-content: center;'><img src='{details['image']}' width='300' /></div>",
+    unsafe_allow_html=True
+
+            )            
             quantity = st.slider(f"Select quantity of: {item_name}", 0, 10, 0)
             if quantity > 0:
                 cart_items.append((item_name, quantity, menu[item_name]["price"]))
