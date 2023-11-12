@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 from src import Operations as op
 from PIL import Image
-
 menu = {
     "Munch": {"price": 5, "image": r"src/item1.jpg"},
     "Ball-Point Pen": {"price": 7, "image": r"src/item2.jpg"},
